@@ -1,0 +1,18 @@
+<h1>Users</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Admin</th>
+      <th>Toggle Admin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='user in users track by $index'>
+      <td>{{user.email}}</td>
+      <td>{{user.admin}}</td>
+      <td><button ng-click='toggleAdmin(user)' class="btn btn-warning">Toggle</button></td>
+    </tr>
+  </tbody>
+</table>
